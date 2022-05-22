@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 62.5%;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.container{
+    margin: 5% auto;
+    max-width: 30rem;
+    border-radius: 15px;
+    background-color: #fff;
+
+    -webkit-box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+    -moz-box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+    box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+}
+
+.main-img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card__main-text{
+    text-align: center;
+    margin: 2rem 1.5rem;
+}
+
+.heading{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.main-para{
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.amount-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem 1.5rem;
+    font-size: .8rem;
+    color: hsl(224, 23%, 55%);
+  
+}
+
+.amount__heading{
+    font-weight: 900;
+    font-size: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+
+
+.payment-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.payment{
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    padding: 1.5rem 8rem;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+    -moz-box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+    box-shadow: 0px 13px 15px 4px rgba(184,177,184,0.65);
+}
+
+
+.payment-box a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+
+@media only screen and (max-width: 37.5rem) {
+    .amount-box{
+        margin: 1rem 2rem;
+    }
+
+    .payment{
+        padding: 1.5rem 4rem;
+    }
+
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
